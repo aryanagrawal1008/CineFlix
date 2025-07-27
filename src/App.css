@@ -1,0 +1,53 @@
+.bgblur{
+    background-color: rgba(85, 86, 89, 0.5);
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    width: 100%;
+
+}
+.bgblur:hover{
+    background-color: rgba(166, 168, 171, 0.7);
+}
+.box-size{
+    margin: 0 20px;
+    max-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kingimg{
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: rgba(123, 119, 119,00.25);
+
+}
+.kingimg:hover{
+    transform: scale(1.05);
+}
+.butt{
+    padding: 10px 20px;
+    display:flex;
+    justify-content: center;
+    align-items:start;
+}
+.inputlater{
+    
+    margin: 20px auto;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue
+ 
+}   
+.box-re{
+    display: flex;
+    
+    padding: 3px;
+
+    width: 100%;
+    height: 100%;
+}
