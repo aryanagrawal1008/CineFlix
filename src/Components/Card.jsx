@@ -18,24 +18,6 @@ const Card = ({
   return (
     <div className="col">
       <div className="card shadow-sm h-100">
-        {!doesContain(movie) ? (
-          <div
-            style={{ textAlign: "center" }}
-            className="kingimg"
-            onClick={() => addToWatchlist(movie)}
-          >
-            Add to Watch later &#129321;
-          </div>
-        ) : (
-          <div
-            style={{ textAlign: "center" }}
-            className="kingimg"
-            onClick={() => handleRemoveFromWatchList(movie)}
-          >
-            Remove from Watch later &#129402;
-          </div>
-        )}
-
         <img
           src={imageUrl}
           className="card-img-top kingimg"
@@ -65,6 +47,24 @@ const Card = ({
                   IMDb
                 </button>
               </a>
+              {!doesContain(movie) ? (
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  style={{ width: "10rem", height: "4rem" }}
+                  onClick={() => addToWatchlist(movie)}
+                >
+                  Add to Watch later &#129321;
+                </button>
+              ) : (
+                <button
+                  className="btn btn-outline-danger"
+                  style={{ width: "10rem", height: "4rem" }}
+                  onClick={() => handleRemoveFromWatchList(movie)}
+                >
+                  Remove from Watch later &#129402;
+                </button>
+              )}
             </div>
             <small className="text-muted" style={{ padding: "0px 20px" }}>
               {(movie.genre && movie.genre[1]) || "Genre"} | {movie.released} |
